@@ -53,14 +53,13 @@ h1 {
   font-size: 5rem;
   color: #8fb7ac;
   text-shadow: 3px 3px 8px #000;
-  margin: 60px 0;
-  margin-top: 0;
+  margin: 0 0 60px 0;
   padding-top: 3rem;
 }
 
 .box {
   width: 40%;
-  margin: 18rem auto 0 auto;
+  margin: 16rem auto 0 auto;
   background: rgba(255, 255, 255, 0.4);
   color: #333;
   padding: 35px;
@@ -68,13 +67,14 @@ h1 {
   border-radius: 20px/50px;
   background-clip: padding-box;
   text-align: center;
+  position: relative;
 }
 
 .button {
   font-size: 1em;
   padding: 10px;
   color: #fff;
-  border: 2px solid #2980b9;
+  border: 2px solid #254b7c;
   background-color: rgba(41, 128, 185, 0.4);
   border-radius: 20px/50px;
   text-decoration: none;
@@ -84,7 +84,7 @@ h1 {
 }
 
 .button:hover {
-  background: #2980b9;
+  background: #254b7c;
 }
 
 .overlay {
@@ -98,6 +98,7 @@ h1 {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+  z-index: 1000;
 }
 
 .overlay:target {
@@ -201,7 +202,7 @@ a {
   position: absolute;
   display: none;
   width: 100%;
-  background: #2980B9;
+  background: #254b7c;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   -ms-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
@@ -227,7 +228,7 @@ a {
 }
 
 .nav-fostrap li:hover a {
-  background: #2980B9;
+  background: #254b7c;
   color: #fff !important;
 }
 
@@ -275,7 +276,7 @@ a {
           justify-content: center;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 820px) {
   header {
     background-size: contain;
     background-repeat: no-repeat;
@@ -283,8 +284,8 @@ a {
   h1 {
     padding-top: 15rem;
   }
-  .button {
-    background: #254b7c;
+  .box {
+    margin: 0 auto;
   }
   .nav-fostrap {
     background: #fff;
@@ -327,7 +328,7 @@ a {
     position: absolute;
     top: 0px;
     left: 0px;
-    background: #5f310f;
+    background: #8fb7ac;
     padding: 12px 0 0 10px;
     -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     -ms-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
@@ -376,12 +377,12 @@ a {
     position: relative;
   }
   .nav-fostrap li ul.dropdown li a {
-    background: #2980B9 !important;
+    background: #254b7c !important;
     border-bottom: none;
     color: #fff !important;
   }
   .nav-fostrap li:hover a {
-    background: #2980B9;
+    background: #254b7c;
     color: #fff !important;
   }
   .nav-fostrap li ul.dropdown li:hover a {
@@ -422,6 +423,7 @@ a {
 @media screen and (max-width: 700px) {
   .box {
     width: 70%;
+    margin: 0 auto;
   }
   .popup {
     width: 70%;
@@ -429,9 +431,7 @@ a {
   h1 {
     padding-top: 15rem;
     font-size: 2rem;
-  }
-  .box {
-    margin: 0 auto;
+    margin-bottom: 15px;
   }
 }
 
