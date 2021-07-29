@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Sacramento');
 
-// Variables
+/* Variables */
 $light-blue: #8fb7ac;
 $dark-blue: #254b7c;
 
@@ -54,7 +54,7 @@ h1 {
   font-size: 5rem;
   color: $light-blue;
   text-shadow: 3px 3px 8px #000;
-  margin:0 0 60px 0;
+  margin: 0 0 60px 0;
   padding-top: 3rem;
 }
 
@@ -133,7 +133,7 @@ h1 {
 }
 
 .popup .close:hover {
-  color: #06D85F;
+  color: $light-blue;
 }
 
 .popup .content {
